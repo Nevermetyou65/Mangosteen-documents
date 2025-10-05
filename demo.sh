@@ -1,6 +1,5 @@
 #!/bin/bash
 export CUDA_VISIBLE_DEVICES="1"
-export GOOGLE_API_KEY="AIzaSyA_K1KJpXVSSyLwp0ldFmLu_aqpKzDLSCY"
 marker_single "./pdf_documents_demo/n_gram_language_model.pdf" \
     --output_dir "./pdf_demorun/" \
     --output_format "markdown" \
