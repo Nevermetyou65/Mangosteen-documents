@@ -1,0 +1,13 @@
+marker_single "./documents/inputs/sample_data/pdf_doc_00007.pdf" \
+    --output_dir "./documents/extract_result/sample_data_extracted" \
+    --output_format "markdown" \
+    --pdftext_workers 8 \
+    --disable_image_extraction \
+    --force_ocr \
+    --strip_existing_ocr \
+    --redo_inline_math \
+    --use_llm \
+    --llm_service "marker.services.ollama.OllamaService" \
+    --ollama_base_url "http://localhost:11434" \
+    --ollama_model "gemma3:27b-it-qat" \
+    --debug
